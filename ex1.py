@@ -1,7 +1,7 @@
 import os.path
 from os import path
 
-
+#If file exists, open it. Otherwise make a new file.
 if path.exists("SaveFile.txt"):
     saveFile = open("SaveFile.txt", 'r')
     print(saveFile.read())
@@ -12,6 +12,8 @@ elif path.exists("SaveFile.txt") == False:
     saveFile.write(text)
     saveFile.close()
 
+
+#Handling user input and using it to call functions or format strings.
 defaultResponse = "I didnt understand that"
 functionBool = False
 
